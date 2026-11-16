@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Мария Андреева — приложения с ИИ для блогеров</title>
+<meta name="description" content="Мария Андреева: маркетолог, продюсер, бывший учитель математики и информатики. Создаю приложения с ИИ, чтобы вести блог было легко: Easy Reels и Уникализатор.">
+<link rel="icon" href="img/favicon.png">
+<style>
+:root{--bg:#faf6f4;--card:#fff;--ink:#1d1619;--muted:#76696e;--line:#eee2e4;--a1:#B0234A;--a2:#D4466E;--u1:#ff5a36;--u2:#ff9a3c}
+@media (prefers-color-scheme:dark){:root{--bg:#131014;--card:#1e1a1f;--ink:#f4eff2;--muted:#a4979d;--line:#2f282d}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:880px;margin:0 auto;padding:0 16px}
+header{padding:20px 0;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.logo{font-weight:800;font-size:19px;text-decoration:none;color:var(--ink);white-space:nowrap}
+nav{white-space:nowrap}
+nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-size:15px}
+.hero{padding:44px 0 20px}
+.tag{display:inline-block;font-size:14px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:4px 12px;margin-bottom:18px}
+h1{font-size:clamp(32px,6.4vw,52px);line-height:1.1;margin:0 0 18px;letter-spacing:-.5px}
+h1 em{font-style:normal;background:linear-gradient(90deg,var(--a1),var(--u1));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:20px;color:var(--muted);max-width:660px;margin:0 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-weight:700;padding:14px 24px;border-radius:14px;font-size:16px;color:#fff;background:linear-gradient(90deg,var(--a1),var(--a2))}
+.btn.ghost{background:none;color:var(--ink);border:1.5px solid var(--line)}
+.btn.uniq{background:linear-gradient(90deg,var(--u1),var(--u2))}
+section{margin:56px 0}
+h2{font-size:28px;margin:0 0 20px;letter-spacing:-.3px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.fact{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.fact b{display:block;font-size:26px;line-height:1.2}
+.fact span{color:var(--muted);font-size:15px}
+.about p{max-width:680px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.product{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:24px;display:flex;flex-direction:column;gap:14px}
+.product .top{display:flex;gap:14px;align-items:center}
+.product img{width:64px;height:64px;border-radius:16px;flex:none}
+.product h3{margin:0;font-size:22px}
+.product .sub{margin:0;color:var(--muted);font-size:15px}
+.product ul{margin:0;padding-left:20px;color:var(--ink)}
+.product li{margin-bottom:4px}
+.price{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.price s{color:var(--muted);font-size:18px}
+.price b{font-size:34px}
+.note{font-size:14px;color:var(--muted);margin:-6px 0 0}
+.product .cta{margin-top:auto}
+.product .btn{flex:1;min-width:140px}
+.duo{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px 22px;color:var(--muted)}
+.duo b{color:var(--ink)}
+.contacts{display:flex;flex-wrap:wrap;gap:12px}
+footer{border-top:1px solid var(--line);margin-top:56px;padding:24px 0 40px;color:var(--muted);font-size:14px}
+footer a{color:var(--muted)}
+footer p{margin:4px 0}
+@media (max-width:560px){nav{display:none}.lead{font-size:18px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="./">Мария Андреева</a>
+  <nav><a href="#products">Приложения</a><a href="#about">Обо мне</a><a href="#contacts">Контакты</a></nav>
+</header>
+
+<div class="hero">
+  <span class="tag">Маркетолог · продюсер · бывший учитель информатики</span>
+  <h1>Делаю приложения с ИИ, чтобы <em>вести блог было легко</em></h1>
+  <p class="lead">Я Мария Андреева. Создаю простые приложения для блогеров и экспертов: они экономят часы на контенте и работают прямо на телефоне, без монтажных программ и подписок.</p>
+  <div class="cta">
+    <a class="btn" href="#products">Посмотреть приложения</a>
+    <a class="btn ghost" href="https://t.me/marya_andreeva" target="_blank" rel="noopener">Написать мне</a>
+  </div>
+</div>
+
+<section id="products">
+  <h2>Мои приложения</h2>
+  <div class="products">
+    <article class="product">
+      <div class="top">
+        <img src="img/easy-reels.png" alt="">
+        <div><h3>Easy Reels</h3><p class="sub">30 рилсов без говорящей головы за один вечер</p></div>
+      </div>
+      <ul>
+        <li>Инструкция для ИИ пишет 30 заголовков из реальных вопросов вашей аудитории и 30 продающих описаний с кодовым словом.</li>
+        <li>Приложение само накладывает заголовки на ваши видео из галереи.</li>
+        <li>iPhone, Android и компьютер.</li>
+      </ul>
+      <div class="price"><s>3 900 ₽</s><b>1 490 ₽</b></div>
+      <p class="note">Цена для самых решительных: действует 24 часа после старта в боте. Один раз, без подписки.</p>
+      <div class="cta">
+        <a class="btn" href="https://t.me/izireals_bot?start=me">Купить в Telegram</a>
+        <a class="btn ghost" href="https://mdandreeva1985.github.io/">Подробнее</a>
+      </div>
+    </article>
+
+    <article class="product">
+      <div class="top">
+        <img src="img/unikalizator.png" alt="">
+        <div><h3>Уникализатор</h3><p class="sub">До 10 уникальных копий одного ролика</p></div>
+      </div>
+      <ul>
+        <li>Делает из одного ролика до 10 копий: для соцсетей каждая выглядит как новое видео.</li>
+        <li>Перезаливайте залетевшие рилсы и тестируйте версии в пробных Reels.</li>
+        <li>Работает прямо на телефоне, даже без интернета.</li>
+      </ul>
+      <div class="price"><s>2 900 ₽</s><b>990 ₽</b></div>
+      <p class="note">Цена для самых решительных: действует 24 часа после старта в боте. Один раз и навсегда, без лимитов.</p>
+      <div class="cta">
+        <a class="btn uniq" href="https://t.me/Unikalizatorreals_bot?start=me">Купить в Telegram</a>
+        <a class="btn ghost" href="https://mdandreeva1985.github.io/unikalizator-site/">Подробнее</a>
+      </div>
+    </article>
+  </div>
+  <p class="duo" style="margin-top:16px"><b>Вместе они работают в паре.</b> Easy Reels помогает сделать 30 рилсов за вечер, а Уникализатор превращает каждый залетевший ролик ещё в 10 копий.</p>
+</section>
+
+<section id="about" class="about">
+  <h2>Обо мне</h2>
+  <p>Я маркетолог и продюсер. Семь лет работала учителем математики и информатики, поэтому люблю, когда сложное становится простым и понятным.</p>
+  <p>Сейчас я сама себе продюсер: превращаю идеи в проекты с помощью искусственного интеллекта и показываю этот путь в блоге, с цифрами, ошибками и выводами. Приложения, которые я делаю, сначала решают мои собственные задачи в блоге, а потом помогают другим.</p>
+  <div class="facts" style="margin-top:22px">
+    <div class="fact"><b>72 заявки</b><span>с первого рилса, сделанного по схеме Easy Reels</span></div>
+    <div class="fact"><b>7 лет</b><span>учителем математики и информатики</span></div>
+    <div class="fact"><b>2 приложения</b><span>для блогеров, работают прямо на телефоне</span></div>
+  </div>
+</section>
+
+<section id="contacts">
+  <h2>Контакты</h2>
+  <div class="contacts">
+    <a class="btn" href="https://t.me/marya_andreeva" target="_blank" rel="noopener">Telegram</a>
+    <a class="btn ghost" href="https://instagram.com/marya_andreeva_" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</section>
+
+<footer>
+  <p>ИП Андреева Мария Дмитриевна · ИНН 143000978153 · ОГРНИП 320144700041110</p>
+  <p>Эл. почта: mdandreeva1985@gmail.com · Телефон: +7 992 334-90-20</p>
+  <p><a href="https://mdandreeva1985.github.io/oferta.html">Договор-оферта</a> · <a href="https://mdandreeva1985.github.io/privacy.html">Политика конфиденциальности</a></p>
+  <p>© 2026 Мария Андреева</p>
+</footer>
+</div>
+</body>
+</html>
